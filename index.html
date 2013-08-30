@@ -1,52 +1,121 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Hackulator by Hackulator</title>
+	<head>
+		<link href="grid_layout.css" media="screen" rel="stylesheet" type="text/css"/>
+		<link type="text/css" rel="stylesheet" href="stylesheet.css"/>
+		<title>Hackulator: The Affordable Graphing Calculator</title>
+	</head>
+	
+	<body>
+	<!-- for creating the twitter box which takes input for tweeting to hackulator -->
+	<div id="tweet_box">
+		<img id="twit_logo" src="http://marketingland.com/wp-content/ml-loads/2012/06/new-twitter-logo.png"/>
+		<div>@hackulator</div>
+	</div>
 
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-  </head>
-  <body>
-    <div class="wrapper">
-      <header>
-        <h1>Hackulator</h1>
-        <p>The open-source graphing calculator</p>
+	<div id="email">
+		<a href="mailto:hackulator.info@gmail.com"><img id="email_logo" src="http://www.veryicon.com/icon/png/Internet%20%26%20Web/Pretty%20Social%20Media/email.png"/></a>
+	</div> 
+
+	<!-- white container that runs through the page on which all the content is centered -->
+	<div id="container">
+
+		<div id="nav">
+		<!-- navigation buttons at the top of the page -->
+			<a href="#">Contact</a>  
+			<a href="#">About Us</a>
+			<a href="#">Hiring</a>
+		</div>
+
+		<div id="header">Why does it cost so much to learn math?</div>
+
+<!-- this will be a box that has info about us. In the mock up this is the table that has tweet us, the team, etc... in it. I plan on changing the format for this wich is why its commented out now -->
+		<div id="about_box"> 
+				<!-- <table>
+		            <tbody>
+		                <tr>
+		                    <td><img id="twit_logo" src="http://jonbennallick.co.uk/wp-content/uploads/2012/11/Twitter-Logo-Icon-by-Jon-Bennallick-02.png"></td>
+		                    <td>Tweet us!</td>     
+		                </tr>
+		                
+		                <tr>
+		                    <td>Team</td>
+		                    <td></td>
+		                </tr>
+		                
+		                <tr>
+		                    <td>Prototype</td>
+		                    <td><a href="">Test</a> out the calculator</td>
+		                </tr>
+
+		                <tr>
+		                	<td>For press</td>
+		                	<td><a href="emailto:hackulator.info@gmail.com">Email</a> us!</td>
+		                </tr>
+		            </tbody>
+	        	</table> -->
+			</div>
+
+			<!-- the mission statement on the left of the container -->
+		<div id ="miss_statement">
+			<p><span>We think parents, students, schools and teachers pay way too much money for what's out there.</span> Almost all graphing calculators currently on the market have seen little technological innovation since their debut in 1990. Current standardized tests only allow use of graphing calculators that are too expensive for students for low-income backgrounds to access. We want to change this.<p>
+
+		</div>
+
+		<!-- the comparison block inside the container -->
+		<div id="comparison">
+			<div id="competition">
+				<p>TI-89 .............. $180</p>
+				<p>TI-84 .............. $120</p>
+				<p>HP-50g ........... $130</p>
+			</div>
+
+			<div id="hack_price">Hackulator .... $25</div>
+		</div>
 
 
-        <p class="view"><a href="https://github.com/Hackulator">View My GitHub Profile</a></p>
+		<div id="ppp">
+			<!-- creating the divider and then the Updates tab -->
+			<div id="separator"></div>
+			<div id="update_header">Updates</div>
 
-      </header>
-      <section>
-        <h2>
-<a name="the-goal-of-the-hackulator-project-is-to-provide-parents-students-and-teachers-access-to-graphing-calculator-technology-that-is-intuitive-more-affordable-than-current-graphing-calculator-models-and-allowed-on-most-standardized-exams-such-as-the-ap-sat-act-and-ib" class="anchor" href="#the-goal-of-the-hackulator-project-is-to-provide-parents-students-and-teachers-access-to-graphing-calculator-technology-that-is-intuitive-more-affordable-than-current-graphing-calculator-models-and-allowed-on-most-standardized-exams-such-as-the-ap-sat-act-and-ib"><span class="octicon octicon-link"></span></a>The goal of the Hackulator project is to provide parents, students and teachers access to graphing calculator technology that is intuitive, more affordable than current graphing calculator models and allowed on most standardized exams such as the AP, SAT, ACT and IB.</h2>
+			<!-- using the grid_layout.css file to style these in columns. They are responsive so if you minimize the window the columns stack on top of eachother. Taken from http://www.responsivegridsystem.com/ -->
+			<div class="section group">
+				<div id="progress" class="ppp_item col span_1_of_3">
+					<h1>Progress</h1>
+					
+					<ul>
+						<li> <span>08/5/13</span> We are in round three of drafting the Pitch Deck; we've been doing weekly run-throughs and iterating revisions.</li>
+						<li> <span>07/25/13</span> We have formed a value proposition and have begun drafting a pitch deck: we used the Sequoia Capital outline at www.sequoiacap.com/ideas to create a value proposition for the Hackulator project.</li>
+						<li> <span>07/24/13</span> We have finished consolidating our preliminary research on the way students and teachers interact with graphing calculators and are now drafting a teacher survey based off of these findings.</li>
+					</ul>
 
-<p><em><strong>We think parents, students, schools and teachers pay way too much money for current graphing calculator models.</strong></em> Almost all graphing calculators currently on the market have seen little technological innovation since their debut in 1990. Current standardized tests only allow use of graphing calculators that are too expensive for students for low-income backgrounds to access. We want to change this. </p>
+				</div>
 
-<p>Having many connections to local hacker spaces throughout New York City, one of the main goals of this project is to seek out feedback from those who have already begun confronting the issues and limitations of current calculator models.  </p>
+				<div id="plans" class="ppp_item col span_1_of_3">
+					<h1>Plans</h1>
 
-<h3>
-<a name="the-team-behind-hackulator" class="anchor" href="#the-team-behind-hackulator"><span class="octicon octicon-link"></span></a>The Team Behind Hackulator:</h3>
+					<ul>
+						<li> User Based Testing with Teachers: We have an existing survey for questions to ask teachers. If you are a teacher or have teacher friends who would be interested in participating in the survey, please send us an email at hackulator.info[at]gmail.com.</li>
+						<li>Oliver and Anisha will be sitting down with their Python programming mentor to discuss the trajectory for coding the the graphing calculator software.</li>
+					</ul>
 
-<p><strong>Avi Karnani:</strong>
-Developed a lifelong love of learning and math when in montessori school his teacher thought it better to let him play with a calculator instead of naptime. Later he saw that students in under resourced schools didnt have access to graphing calculators; they were locked up and only available for short segments of classroom time.  Cost was cited as the reason why.</p>
+			
+				</div>
+				<div id="problems" class="ppp_item col span_1_of_3">
+					<h1>Problems</h1>
 
-<p><strong>Anisha Ramnani:</strong>
-Anisha thinks math is awesome and wants to make sure this calculator helps people be less scared of math. She feels too many students are overwhelmed by the fact that math builds on previously learned material over the years and doesn't want it to be that way.</p>
 
-<p><strong>Oliver Switzer:</strong> 
-A lifelong tinkerer who in college decided Physics is where it’s at. He’s spent more time working with graphing calculators than a healthy person should; like a loving partner he understands their flaws and wants to help them be better.</p>
-      </section>
-      <footer>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-      </footer>
-    </div>
-    <script src="javascripts/scale.fix.js"></script>
-    
-  </body>
-</html>
+					<ul>
+						<li> We are looking for more detailed statistics on how many students in the United States cannot afford to buy current graphing calculator models like the TI-83. Any information on this would be much appreciated.</li>
+						<li> It is still up to much debate whether the Arduino hardware will be used for the calculator. It is unsure whether using this hardware will likely cause the Hackulator to be banned on most standardized tests.</li>
+					</ul>
+
+					
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+	</body>
