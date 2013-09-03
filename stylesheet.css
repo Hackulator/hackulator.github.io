@@ -17,21 +17,23 @@ html {
 /* for navigation bar at the top, taken/modified from this website example
 http://d.alistapart.com/css-positioning-101/example_j.html*/
 #nav a {
+	background: rgba(130,173, 0, 0.75);
 	display: block;
 	float: left;
-	color: #fff;
+	color: white;
 	text-decoration: none;
 	width:33%;
 	text-align: center;
 	/*padding: 0 40px;*/
 	line-height: 50px;
+	font-size: 25px;
 	border-right: 2px solid rgba(0,0,0, .4);
 	border-bottom: 2px solid rgba(0,0,0, .4);
 	border-radius:10px;
 }
 
 #nav a:hover {
-	background: rgba(169,222,24, .8);
+	background: rgba(153, 211, 71, 1.000);
 	border-radius:10px;
 	border-right: 2px solid rgba(0,0,0, .95);
 	border-bottom: 2px solid rgba(0,0,0, .95);
@@ -39,7 +41,6 @@ http://d.alistapart.com/css-positioning-101/example_j.html*/
 
 #nav { 
 	height: 50px;
-	background: rgba(169,222,24, 0.5);
 	border-radius:10px;
 }
 
@@ -93,7 +94,7 @@ http://d.alistapart.com/css-positioning-101/example_j.html*/
 #container {
 	width: 64%;
 	margin: 0 auto;    /*centers it*/
-	background:rgba(255,255,255, 0.65);
+	background:rgba(255,255,255, .85);
 	border-radius:10px;
 	border-right:rgba(0,0,0, 0.45) ;  /*my failed attempt at giving it a shadow*/
 	border-bottom:rgba(0,0,0, 0.45) ;
@@ -110,11 +111,17 @@ http://d.alistapart.com/css-positioning-101/example_j.html*/
 
 /*fomratting the paragraph of text at the top of the container*/
 #miss_statement {    
-	position: relative;
+/*	position: inline-block;*/
 	color: black;
-	font-size: 24px;
+	font-size: 23px;
 	width:45%;
 	padding: 20px 260px 20px 45px;
+}
+
+#big_statement {
+	margin: 20px 40px 20px 40px;
+	font-size:29px;
+	font-weight: bold;
 }
 
 /*for the first sentence in the mission statement*/
@@ -124,15 +131,16 @@ span {
 
 /*the box in which i will compare hackulator price with TI and others*/
 #comparison {
-	position: absolute;
+	position: inline-block;
+	/*position: absolute;
 	top: 275px;
-	right: 250px;
-	width: 400px;
+	right: 250px;*/
+	width: 200px;
 	height: 300px;
 	padding: 20px;
 	border-bottom: 3px solid rgba(0,0,0, 0.3);
 	border-right: 3px solid rgba(0,0,0, 0.3);
-	background: rgba(254,120, 1, 0.75);
+	background: rgba(238, 157, 97, 1.0000);
 	border-radius: 10px;
 	
 	/*font-size:25px;
@@ -153,7 +161,7 @@ span {
 
 #hack_price {
 	color: white;
-	background: #4A79D9;
+	background: rgba(90,167,221, 1);
 	font-size: 250%;
 	padding: 20px;
 	border-radius: 10px;
@@ -233,7 +241,7 @@ span {
 }
 
 #problems {
-	background: rgba(254,120, 1, 0.75);
+	background: rgba(238, 157, 97, 1.0000);
 }
 
 
