@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<link href="grid_layout.css" media="screen" rel="stylesheet" type="text/css"/>
 		<link type="text/css" rel="stylesheet" href="stylesheet.css"/>
+		<link href="grid_layout.css" media="screen" rel="stylesheet" type="text/css"/>
+		<link href="2cols.css" media="screen" rel="stylesheet" type="text/css"/>
 		<title>Hackulator: The Affordable Graphing Calculator</title>
-	</head>
 	
 	<body>
 	<!-- for creating the twitter box which takes input for tweeting to hackulator -->
-	<div id="tweet_box">
+	<!-- <div id="tweet_box">
 		<img id="twit_logo" src="http://marketingland.com/wp-content/ml-loads/2012/06/new-twitter-logo.png"/>
 		<div>@hackulator</div>
-	</div>
+	</div> -->
+	<img id="twit_logo" src="http://marketingland.com/wp-content/ml-loads/2012/06/new-twitter-logo.png"/>
 
-	<div id="email">
-		<a href="mailto:hackulator.info@gmail.com"><img id="email_logo" src="http://www.veryicon.com/icon/png/Internet%20%26%20Web/Pretty%20Social%20Media/email.png"/></a>
-	</div> 
+
+	<a href="mailto:hackulator.info@gmail.com"><img id="email_logo" src="http://www.veryicon.com/icon/png/Internet%20%26%20Web/Pretty%20Social%20Media/email.png"/></a> 
 
 	<!-- white container that runs through the page on which all the content is centered -->
 	<div id="container">
@@ -35,7 +35,7 @@
 			<!-- the mission statement on the left of the container -->
 		
 		<div id="top_container" class="section group">
-			<div id ="miss_statement" class="span_1_of_2">
+			<div id ="miss_statement" class="col span_1_of_2">
 				<ul>
 					<li>Gaphing calculators currently on the market have seen little technological innovation since their debut in 1990.</li>
 					<li> Current standardized tests only allow use of graphing calculators that are too expensive for students for low-income backgrounds to access. <span>We want to change this.</span></li>
@@ -44,11 +44,13 @@
 			</div>
 
 		<!-- the comparison block inside the container -->
-			<div id="comparison" class="span_1_of_2">
+			<div id="comparison" class="col span_1_of_2">
 				<div id="competition">
-					<p>TI-89 .............. $180</p>
-					<p>TI-84 .............. $120</p>
-					<p>HP-50g ........... $130</p>
+					<p>TI-89 ............................... $180</p>
+					<p>TI-84 ............................... $120</p>
+					<p>HP-50g ............................ $130</p>
+					<p>Casio FX-9750GII .............. $70</p>
+					<p>TI-Nspire CX ................... $150</p>
 				</div>
 
 				<div id="hack_price">Hackulator .... $25</div>
@@ -56,11 +58,13 @@
 		</div>
 
 
-		<div id="ppp">
-			<!-- creating the divider and then the Updates tab -->
-			<div id="separator"></div>
-			<div id="update_header">Updates</div>
+		
+		<!-- creating the divider and then the Updates tab -->
+		<div id="separator"></div>
+		<div id="update_header">Updates: Our "PPP"</div>
 
+
+		<div id="ppp">
 			<!-- using the grid_layout.css file to style these in columns. They are responsive so if you minimize the window the columns stack on top of eachother. Taken from http://www.responsivegridsystem.com/ -->
 			<div class="section group">
 				<div id="progress" class="ppp_item col span_1_of_3">
@@ -68,7 +72,9 @@
 					
 					<ul>
 						<li> <span>08/5/13</span> We are in round three of drafting the Pitch Deck; we've been doing weekly run-throughs and iterating revisions.</li>
-						<li> <span>07/25/13</span> We have formed a value proposition and have begun drafting a pitch deck: we used the Sequoia Capital outline at www.sequoiacap.com/ideas to create a value proposition for the Hackulator project.</li>
+						<div id="separator"></div>
+						<li> <span>07/25/13</span> We have formed a value proposition and have begun drafting a pitch deck: we used the Sequoia Capital outline <a href="www.sequoiacap.com/ideas">here</a> to create a value proposition for the Hackulator project.</li>
+						<div id="separator"></div>
 						<li> <span>07/24/13</span> We have finished consolidating our preliminary research on the way students and teachers interact with graphing calculators and are now drafting a teacher survey based off of these findings.</li>
 					</ul>
 
@@ -78,7 +84,8 @@
 					<h1>Plans</h1>
 
 					<ul>
-						<li> User Based Testing with Teachers: We have an existing survey for questions to ask teachers. If you are a teacher or have teacher friends who would be interested in participating in the survey, please send us an email at hackulator.info[at]gmail.com.</li>
+						<li> User Based Testing with Teachers: We have an existing survey for questions to ask teachers. If you are a teacher or have teacher friends who would be interested in participating in the survey, please <a href="mailto:hackulator.info@gmail.com">send us an email</a></li>
+						<div id="separator"></div>
 						<li>Oliver and Anisha will be sitting down with their Python programming mentor to discuss the trajectory for coding the the graphing calculator software.</li>
 					</ul>
 
@@ -90,6 +97,7 @@
 
 					<ul>
 						<li> We are looking for more detailed statistics on how many students in the United States cannot afford to buy current graphing calculator models like the TI-83. Any information on this would be much appreciated.</li>
+						<div id="separator"></div>
 						<li> It is still up to much debate whether the Arduino hardware will be used for the calculator. It is unsure whether using this hardware will likely cause the Hackulator to be banned on most standardized tests.</li>
 					</ul>
 

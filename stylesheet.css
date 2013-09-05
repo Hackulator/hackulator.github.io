@@ -1,7 +1,11 @@
+
+/** {
+	border: 1px dashed blue;
+}*/
+
 /*general text formatting of the web page*/
 body {
     font-family: Tahoma, Geneva, sans-serif;
-    font-size: ;
 }
 
 /*creating the image background and keeping it fixed. I took this from online (found by joe)*/
@@ -13,6 +17,9 @@ html {
 	background-size: cover;
 }
 
+a {
+	text-decoration: none;
+}
 
 /* for navigation bar at the top, taken/modified from this website example
 http://d.alistapart.com/css-positioning-101/example_j.html*/
@@ -58,41 +65,46 @@ http://d.alistapart.com/css-positioning-101/example_j.html*/
 }
 
 /*for formatting the text box that goes inside the twitter box*/
-#tweet_box div {
+/*#tweet_box div {
 	display: block;
 	height: 50%;
 	background: rgba(255,255,255, 0.5);
 	border: 1px solid black;
 	margin: 10px 35px 0px 35px;
-}
+}*/
 
 /*formatting the twitter logo image so it looks nice*/
 #twit_logo {
+	position: fixed;
+	top:75px;
+	right:0px;
 	opacity:.75;
-	margin: 10px;
 	width: 50px;
 	height: 50px;
 	border-radius: 10px
 }
 
-#email {
+/*#email {
 	z-index: +1;  
 	position: fixed;   
-	height: 15px; 
+	height: 30px; 
 	top: 350px;
-	right: 75px;
+	right: 0px;
 	border-radius: 10px;     
-}
+}*/
 
 #email_logo {
+	position: fixed;
+	top: 20px;
+	right: -2px;
 	opacity: .7; 
-	width: 100px;
-	height: 100px;
+	width: 55px;
+	height: 55px;
 }
 
 /*the main opaque white container that runs through the page */
 #container {
-	width: 64%;
+	width: 80%;
 	margin: 0 auto;    /*centers it*/
 	background:rgba(255,255,255, .85);
 	border-radius:10px;
@@ -113,10 +125,16 @@ http://d.alistapart.com/css-positioning-101/example_j.html*/
 #miss_statement {    
 /*	position: inline-block;*/
 	color: black;
-	font-size: 23px;
+	font-size: 29px;
 	width:45%;
-	padding: 20px 260px 20px 45px;
+	padding-left: 15px;
+/*	padding: 20px 260px 20px 45px;*/
 }
+
+#miss_statement > ul > li {    
+	margin-bottom: 17px;
+}
+
 
 #big_statement {
 	margin: 20px 40px 20px 40px;
@@ -131,18 +149,13 @@ span {
 
 /*the box in which i will compare hackulator price with TI and others*/
 #comparison {
-	position: inline-block;
-	/*position: absolute;
-	top: 275px;
-	right: 250px;*/
-	width: 200px;
-	height: 300px;
-	padding: 20px;
+/*	width: 200px;
+	height: 300px;*/
+	/*padding: 20px;*/
 	border-bottom: 3px solid rgba(0,0,0, 0.3);
 	border-right: 3px solid rgba(0,0,0, 0.3);
 	background: rgba(238, 157, 97, 1.0000);
 	border-radius: 10px;
-	
 	/*font-size:25px;
 	background: white;
 	/*border: 1px solid black;
@@ -155,68 +168,76 @@ span {
 /*for the div that contains TI, HP and CASIO calculator prices that are crossed out*/
 #competition {
 	line-height: 50%;
-	font-size: 250%;
+	text-align: center;
+	font-size: 200%;
 	color: #565656;
 }
 
 #hack_price {
+	text-align: center;
 	color: white;
 	background: rgba(90,167,221, 1);
-	font-size: 250%;
+	font-size: 300%;
+	margin: 10px 20px 10px 20px;
 	padding: 20px;
 	border-radius: 10px;
 	border-bottom: 3px solid #565656;
 	border-right: 3px solid #565656;
 }
 
-#ppp {
-	width: 85%;
-	/*border: 1px dashed black;*/
-	margin: 0 auto;
-}
+
 /*taken from http://css-tricks.com/examples/hrs/*/
 #separator {  
 	width: 100%;
     border: 0;
-    height: 4px;
+    height: 2px;
+    margin-top: 30px;
+    margin-bottom: 30px;
   /*  background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
     background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
     background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
     background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));*/ 
 
-    background-image: -webkit-linear-gradient(left, rgba(31,99,171,0), rgba(31,99,171,0.75), rgba(31,99,171,0)); 
-    background-image:    -moz-linear-gradient(left, rgba(31,99,171,0), rgba(31,99,171,0.75), rgba(31,99,171,0)); 
-    background-image:     -ms-linear-gradient(left, rgba(31,99,171,0), rgba(31,99,171,0.75), rgba(31,99,171,0)); 
-    background-image:      -o-linear-gradient(left, rgba(31,99,171,0), rgba(31,99,171,0.75), rgba(31,99,171,0)); 
+    background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+    background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+    background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+    background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
 
 }
 
 
 #update_header {
-	background-image: -webkit-linear-gradient(left, rgba(31,99,171,0.45), rgba(31,99,171,0.75), rgba(31,99,171,0.45)); 
+	/*background-image: -webkit-linear-gradient(left, rgba(31,99,171,0.45), rgba(31,99,171,0.75), rgba(31,99,171,0.45)); 
     background-image:    -moz-linear-gradient(left, rgba(31,99,171,0), rgba(31,99,171,0.75), rgba(31,99,171,0)); 
     background-image:     -ms-linear-gradient(left, rgba(31,99,171,0), rgba(31,99,171,0.75), rgba(31,99,171,0)); 
-    background-image:      -o-linear-gradient(left, rgba(31,99,171,0), rgba(31,99,171,0.75), rgba(31,99,171,0)); 
+    background-image:      -o-linear-gradient(left, rgba(31,99,171,0), rgba(31,99,171,0.75), rgba(31,99,171,0)); */
 	
-	padding: 10px;
+/*	padding: 10px;*/
 	margin: auto;
+	text-decoration: underline;
 	text-align: center;
-	font-size: 100%;
+	font-size: 250%;
 	font-weight: bold;
-	color: white;
+	color: black;
 	/*background: rgba(31,99,171,.65); */
-	border-top: none;
+	/*border-top: none;
 	border-bottom-left-radius: 10px;
 	border-bottom-right-radius: 10px;
-	width: 15%;
+	width: 15%;*/
+}
+
+#ppp {
+	width: 95%;
+	/*border: 1px dashed black;*/
+	margin: 20px auto;
 }
 
 .ppp_item {
-	font-size: 15px;
+	font-size: 27px;
 	color: black;
 	margin-top: 40px;
-	font-size: 15px;
 	border-radius: 10px;
+	font-size: 15px;
 	border-bottom: 3px solid #565656;
 	border-right: 3px solid #565656;
 }
@@ -226,9 +247,9 @@ span {
 }
 
 .ppp_item > ul li  {
-	font-size: 15px;
-	padding-right: 10px;
-	margin:1em 10% 1em 0;   
+	font-size: 20px;
+/*	padding-right: 10px;
+	margin:1em 10% 1em 0;   */
 }
 
 
