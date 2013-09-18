@@ -1,112 +1,133 @@
+
 <!DOCTYPE html>
-<html>
-	<head>
-		<link type="text/css" rel="stylesheet" href="stylesheet.css"/>
-		<link href="grid_layout.css" media="screen" rel="stylesheet" type="text/css"/>
-		<link href="2cols.css" media="screen" rel="stylesheet" type="text/css"/>
-		<title>Hackulator: The Affordable Graphing Calculator</title>
-	
-	<body>
-	<!-- for creating the twitter box which takes input for tweeting to hackulator -->
-	<!-- <div id="tweet_box">
-		<img id="twit_logo" src="http://marketingland.com/wp-content/ml-loads/2012/06/new-twitter-logo.png"/>
-		<div>@hackulator</div>
-	</div> -->
-	<img id="twit_logo" src="http://marketingland.com/wp-content/ml-loads/2012/06/new-twitter-logo.png"/>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title> Hackulator </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
+    <!-- Le styles -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/css/stylesheet.css" rel="stylesheet">
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+      }
+    </style>
+    
+    <!-- Le Javascript --> 
 
-	<a href="mailto:hackulator.info@gmail.com"><img id="email_logo" src="http://www.veryicon.com/icon/png/Internet%20%26%20Web/Pretty%20Social%20Media/email.png"/></a> 
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/transition.js"></script>
+    <script src="assets/js/alert.js"></script>
+    <script src="assets/js/modal.js"></script>
+    <script src="assets/js/dropdown.js"></script>
+    <script src="assets/js/scrollspy.js"></script>
+    <script src="assets/js/tab.js"></script>
+    <script src="assets/js/tooltip.js"></script>
+    <script src="assets/js/popover.js"></script>
+    <script src="assets/js/button.js"></script>
+    <script src="assets/js/collapse.js"></script>
+    <script src="assets/js/carousel.js"></script>
+    <script src="assets/js/typeahead.js"></script>
+    <link href="assets/css/responsive.css" rel="stylesheet">
 
-	<!-- white container that runs through the page on which all the content is centered -->
-	<div id="container">
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="../assets/js/html5shiv.js"></script>
+    <![endif]-->
 
-		<div id="nav">
-		<!-- navigation buttons at the top of the page -->
-			<a href="#">Contact</a>  
-			<a href="#">About Us</a>
-			<a href="#">Hiring</a>
-		</div>
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+                    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+                                   <link rel="shortcut icon" href="assets/ico/favicon.png">
+  </head>
 
-		<div id="header">Why does it cost so much to learn math?</div>
+  <body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="brand" href="#">Hackulator</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li class="active"><a href="#">Home</a></li>
+              <li><a href="#about"> About </a></li>
+              <li><a href="#contact"> Contact</a></li>
+              <li><a href="#contact"> Help Us </a></li>
+              <!--<li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li class="divider"></li>
+                  <li class="nav-header">Nav header</li>
+                  <li><a href="#">Separated link</a></li>
+                  <li><a href="#">One more separated link</a></li> 
+                </ul>
+              </li> --> 
+            </ul>
+           <!--  <form class="navbar-form pull-right">
+              <input class="span2" type="text" placeholder="Email">
+              <input class="span2" type="password" placeholder="Password">
+              <button type="submit" class="btn">Sign in</button>
+            </form> --> 
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
 
+    <div class="container">
 
-		<div id="big_statement">We think parents, students, schools and teachers pay way too much money for what's out there.</div>
+      <!-- Main hero unit for a primary marketing message or call to action -->
+      <div class="hero-unit">
+        <h1> Why does it cost so much to learn math? </h1>
+        <p>We think parents, students, schools and teachers pay way too much money for what's out there. Graphing calculators currently on the market have seen little technological innovation since their debut in 1990. </p>
+        <!--<p><a href="#" class="btn btn-primary btn-large">Learn more &raquo;</a></p> --> 
+      </div>
 
-			<!-- the mission statement on the left of the container -->
-		
-		<div id="top_container" class="section group">
-			<div id ="miss_statement" class="col span_1_of_2">
-				<ul>
-					<li>Gaphing calculators currently on the market have seen little technological innovation since their debut in 1990.</li>
-					<li> Current standardized tests only allow use of graphing calculators that are too expensive for students for low-income backgrounds to access. <span>We want to change this.</span></li>
-				</ul>
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="span4">
+          <h2>Progress</h2>
+          <p> 08/5/13 We are in round three of drafting the Pitch Deck; we've been doing weekly run-throughs and iterating revisions.
+          </p>
+          <p><a class="btn" href="#">View details &raquo;</a></p>
+       </div>
+        <div class="span4">
+          <h2> Plans</h2>
+          <p> User Based Testing with Teachers: We have an existing survey for questions to ask teachers. If you are a teacher or have teacher friends who would be interested in participating in the survey, please send us an email </p>
+          <p><a class="btn" href="#">View details &raquo;</a></p>
+        </div>
+         <div class="span4">
+          <h2> Problems </h2>
+          <p> We are looking for more detailed statistics on how many students in the United States cannot afford to buy current graphing calculator models like the TI-83. Any information on this would be much appreciated. </p>
+          <p><a class="btn" href="#">View details &raquo;</a></p>
+        </div>
+      </div> 
 
-			</div>
+      <hr>
 
-		<!-- the comparison block inside the container -->
-			<div id="comparison" class="col span_1_of_2">
-				<p id="competition_header">Lets compare with the graphing calculators out there:</p>
-				<div id="competition">
-					<p>TI-89 ............................... $180</p>
-					<p>TI-84 ............................... $120</p>
-					<p>HP-50g ............................ $130</p>
-					<p>Casio FX-9750GII .............. $70</p>
-					<p>TI-Nspire CX ................... $150</p>
-				</div>
+      <footer>
+        <p>&copy; Company 2013</p>
+      </footer>
 
-				<div id="hack_price">Hackulator .... $25</div>
-			</div>
-		</div>
+    </div> <!-- /container -->
 
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    
 
-		
-		<!-- creating the divider and then the Updates tab -->
-		<div id="separator"></div>
-		<div id="update_header">Updates: Our "PPP"</div>
-
-
-		<div id="ppp">
-			<!-- using the grid_layout.css file to style these in columns. They are responsive so if you minimize the window the columns stack on top of eachother. Taken from http://www.responsivegridsystem.com/ -->
-			<div class="section group">
-				<div id="progress" class="ppp_item col span_1_of_3">
-					<h1>Progress</h1>
-					
-					<ul>
-						<li> <span>08/5/13</span> We are in round three of drafting the Pitch Deck; we've been doing weekly run-throughs and iterating revisions.</li>
-						<div id="separator"></div>
-						<li> <span>07/25/13</span> We have formed a value proposition and have begun drafting a pitch deck: we used the Sequoia Capital outline <a href="www.sequoiacap.com/ideas">here</a> to create a value proposition for the Hackulator project.</li>
-						<div id="separator"></div>
-						<li> <span>07/24/13</span> We have finished consolidating our preliminary research on the way students and teachers interact with graphing calculators and are now drafting a teacher survey based off of these findings.</li>
-					</ul>
-
-				</div>
-
-				<div id="plans" class="ppp_item col span_1_of_3">
-					<h1>Plans</h1>
-
-					<ul>
-						<li> User Based Testing with Teachers: We have an existing survey for questions to ask teachers. If you are a teacher or have teacher friends who would be interested in participating in the survey, please <a href="mailto:hackulator.info@gmail.com">send us an email</a></li>
-						<div id="separator"></div>
-						<li>Oliver and Anisha will be sitting down with their Python programming mentor to discuss the trajectory for coding the the graphing calculator software.</li>
-					</ul>
-
-			
-				</div>
-				<div id="problems" class="ppp_item col span_1_of_3">
-					<h1>Problems</h1>
-
-
-					<ul>
-						<li> We are looking for more detailed statistics on how many students in the United States cannot afford to buy current graphing calculator models like the TI-83. Any information on this would be much appreciated.</li>
-						<div id="separator"></div>
-						<li> It is still up to much debate whether the Arduino hardware will be used for the calculator. It is unsure whether using this hardware will likely cause the Hackulator to be banned on most standardized tests.</li>
-					</ul>
-
-					
-				</div>
-			</div>
-		</div>
-
-
-	</div>
-	</body>
+  </body>
+</html>
